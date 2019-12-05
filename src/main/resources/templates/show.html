@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
+    <title>Boot模板渲染</title>
+</head>
+<body>
+<!--/*@thymesVar id="adminName" type=""*/-->
+<p th:text="'用户名：'+${adminName}"/>
+<!--/*@thymesVar id="adminEmail" type=""*/-->
+<p th:text="'邮箱：'+${adminEmail}"/>
+
+</body>
+</html>
