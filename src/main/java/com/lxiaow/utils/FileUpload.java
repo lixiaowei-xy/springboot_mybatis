@@ -1,10 +1,8 @@
-package com.lxiaow.util;
+package com.lxiaow.utils;
 
-import com.lxiaow.controller.AdminController;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.springframework.stereotype.Component;
-import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.multipart.MultipartFile;
 
 import java.io.File;
