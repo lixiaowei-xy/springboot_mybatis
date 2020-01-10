@@ -6,6 +6,7 @@ import com.lxiaow.utils.FileUpload;
 import com.lxiaow.utils.excelUtil.ExcelConstant;
 import com.lxiaow.utils.excelUtil.ExcelData;
 import com.lxiaow.utils.excelUtil.ExcelUtils;
+import com.lxiaow.utils.excelUtil.ReadExcelUtil;
 import com.lxiaow.utils.fileUtil.FileUtil;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
@@ -108,5 +109,9 @@ public class AdminController {
         return list;
     }
 
-
+    @PostMapping(value = "/readExcel")
+    public String readExcel(@RequestParam(name = "file") MultipartFile file){
+        ReadExcelUtil.getExcelData(file);
+        return null;
+    }
 }
