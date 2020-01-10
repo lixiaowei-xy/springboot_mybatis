@@ -5,7 +5,7 @@ spring:
   datasource:
     username: root
     password: dragon
-    url: jdbc:mysql://101.132.165.149:3306/test?useUnicode=true&characterEncoding=utf-8
+    url: jdbc:mysql://101.132.165.149:3306/bootTest?useUnicode=true&characterEncoding=utf-8
     driver-class-name: com.mysql.cj.jdbc.Driver
 
   servlet:
